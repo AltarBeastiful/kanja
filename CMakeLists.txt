@@ -2,6 +2,8 @@ project(Kanja)
 
 cmake_minimum_required (VERSION 2.6)
 
+cmake_policy(SET CMP0020 NEW)
+
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 set(CMAKE_INCLUDE_CURRENT_DIR ON) # As moc files are generated in the binary dir, tell CMake to always look for includes
 set(CMAKE_AUTOMOC ON) # Tell CMake to run moc when necessary:
