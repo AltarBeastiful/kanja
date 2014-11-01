@@ -12,5 +12,7 @@ target_link_libraries(SerieTest
                       domain
                       Qt5::Test)
 
+add_test(SerieTest ${CMAKE_CURRENT_BINARY_DIR}/SerieTest)
+
 INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/src/domain)
 

@@ -12,5 +12,7 @@ if(NOT Qt5_FOUND)
   message(FATAL_ERROR "Package Qt required, but not found!")
 endif(NOT Qt5_FOUND)
 
+enable_testing()
+
 add_subdirectory(src)
 add_subdirectory(tests)
