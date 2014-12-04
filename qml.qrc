@@ -1,8 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>main.qml</file>
-        <file>resources/images/Game_of_Thrones_bandeau.jpg</file>
-        <file>resources/images/Game_of_Thrones_pochette.jpg</file>
-        <file>Serie.qml</file>
-    </qresource>
-</RCC>
