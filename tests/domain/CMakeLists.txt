@@ -15,4 +15,5 @@ ENDMACRO(KANJA_DOMAIN_TESTS)
 kanja_domain_tests(
     serietest
     episodetest
+    usertest
 )

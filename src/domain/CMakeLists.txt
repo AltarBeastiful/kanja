@@ -1,6 +1,7 @@
 set(domain_SRCS
     episode.cpp
     serie.cpp
+    user.cpp
 )
 
 add_library(domain STATIC ${domain_SRCS})
