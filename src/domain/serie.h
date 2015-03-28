@@ -1,9 +1,10 @@
 #ifndef DOMAIN_SERIE_H
 #define DOMAIN_SERIE_H
 
-#include <QObject>
-#include <QString>
 #include <QDate>
+#include <QObject>
+#include <QSharedPointer>
+#include <QString>
 
 namespace Domain {
 
@@ -19,6 +20,9 @@ class Serie : public QObject
 
 
 public:
+    typedef QSharedPointer<Serie> Ptr;
+    typedef QList<Serie::Ptr> List;
+
     explicit Serie(QObject *parent = 0);
     virtual ~Serie();
 

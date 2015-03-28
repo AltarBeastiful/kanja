@@ -1,9 +1,10 @@
 #ifndef DOMAIN_EPISODE_H
 #define DOMAIN_EPISODE_H
 
-#include <QObject>
-#include <QString>
 #include <QDate>
+#include <QObject>
+#include <QSharedDataPointer>
+#include <QString>
 
 namespace Domain {
 
@@ -16,6 +17,9 @@ class Episode : public QObject
     Q_PROPERTY(QDate diffusion READ diffusion WRITE setDiffusion NOTIFY diffusionChanged)
 
 public:
+    typedef QSharedPointer<Episode> Ptr;
+    typedef QList<Episode::Ptr> List;
+
     explicit Episode(QObject *parent = 0);
     virtual ~Episode();
 
