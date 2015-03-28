@@ -14,7 +14,6 @@ class Episode : public QObject
     Q_PROPERTY(QString name READ name WRITE setName NOTIFY nameChanged)
     Q_PROPERTY(int season READ season WRITE setSeason NOTIFY seasonChanged)
     Q_PROPERTY(QDate diffusion READ diffusion WRITE setDiffusion NOTIFY diffusionChanged)
-    Q_PROPERTY(QDate lastViewed READ lastViewed WRITE setLastViewed NOTIFY lastViewedChanged)
 
 public:
     explicit Episode(QObject *parent = 0);
@@ -31,14 +30,12 @@ public slots:
     void setName(const QString &name);
     void setSeason(const int season);
     void setDiffusion(const QDate &diffusion);
-    void setLastViewed(const QDate &lastViewed);
 
 signals:
     void numberChanged(int number);
     void nameChanged(QString &name);
     void seasonChanged(int season);
     void diffusionChanged(QDate &diffusion);
-    void lastViewedChanged(QDate &lastViewed);
 
 private:
     int number_m;

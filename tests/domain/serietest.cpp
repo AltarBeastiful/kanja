@@ -39,6 +39,6 @@ void SerieTest::ShouldInstanciateASerie()
     QCOMPARE(serie.bannerPicture(), QString("resources/images/Game_of_Thrones_pochette.jpg"));
 }
 
-QTEST_APPLESS_MAIN(SerieTest)
+QTEST_MAIN(SerieTest)
 
 #include "serietest.moc"

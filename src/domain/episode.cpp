@@ -56,8 +56,3 @@ void Episode::setDiffusion(const QDate &diffusion)
 {
     diffusion_m = diffusion;
 }
-
-void Episode::setLastViewed(const QDate &lastViewed)
-{
-    lastViewed_m = lastViewed;
-}
