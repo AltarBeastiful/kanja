@@ -1,8 +1,6 @@
 #ifndef SERVICES_SERIEQUERIES_H
 #define SERVICES_SERIEQUERIES_H
 
-#include "seriequeries.h"
-
 #include "episode.h"
 #include "serie.h"
 

@@ -2,7 +2,7 @@ set(services_SRCS
     seriequeries.cpp
 )
 
-add_library(services STATIC ${services_SRCS})
-target_link_libraries(services Qt5::Core)
+include_directories(${CMAKE_SOURCE_DIR}/src/domain)
 
-INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/../domain)
+add_library(services STATIC ${services_SRCS})
+target_link_libraries(services domain Qt5::Core)
