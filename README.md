@@ -1,4 +1,3 @@
-
 # kanja
 Track your TV shows viewing progress. 
 
